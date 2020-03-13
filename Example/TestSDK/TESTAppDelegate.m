@@ -7,12 +7,18 @@
 //
 
 #import "TESTAppDelegate.h"
+#import "TESTViewController.h"
 
 @implementation TESTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+ self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+ self.window.backgroundColor = [UIColor clearColor];
+ TESTViewController *rootVC = [[TESTViewController alloc] init];
+ self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController :rootVC];
+ [self.window makeKeyAndVisible];
+
     return YES;
 }
 
