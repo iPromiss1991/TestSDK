@@ -19,7 +19,7 @@
     "ios": "8.0"
   },
   "source_files": "TestSDK/Classes/**/*",
-  "public_header_files": "Pod/Classes/*.h",
+  "public_header_files": "Pod/Headers/**/*.h",
   "frameworks": [
     "UIKit",
     "MapKit"
